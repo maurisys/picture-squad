@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "../Slider";
-import { videoSliderData } from "@/data/videoSliderData";
 
 const HeroSection = () => {
   return (
@@ -9,8 +8,7 @@ const HeroSection = () => {
       <div className="min-w-[52%] flex flex-col text-white px-[50px]">
         <h1 className="text-6xl font-bold">
           <span className="text-primaryBlue">Capture</span>{" "}
-          <span className="text-primaryBlue">Moments</span>, Create <br />
-          Memories
+          <span className="text-primaryBlue">Moments</span>, Create Memories
         </h1>
         <div className="w-full">
           <p className="max-w-[500px] text-slate-300 mt-[30px]">
@@ -31,7 +29,7 @@ const HeroSection = () => {
       </div>
       {/* right section */}
       <div className="relative grow h-full">
-        <Slider data={videoSliderData} />
+        <Slider />
         {/* overlay */}
         <div className="radientOverlay" />
       </div>
