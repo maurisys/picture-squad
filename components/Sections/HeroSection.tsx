@@ -3,7 +3,7 @@ import Slider from "../Slider";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full bg-darkGray h-[90vh] flex items-center">
+    <div className="relative w-full bg-darkGray h-[100vh] lg:h-[90vh] flex items-center px-[20px]">
       {/* left section */}
       <div className="z-10 w-full lg:min-w-[52%] flex flex-col items-center lg:items-start text-white px-[20px] lg:px-[50px]">
         <h1 className="text-4xl lg:text-6xl font-bold">

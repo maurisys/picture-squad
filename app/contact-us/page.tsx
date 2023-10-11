@@ -12,7 +12,7 @@ const ContactUs = () => {
         Get in touch with us
       </h1>
 
-      <div className="flex items-center gap-[20px] mt-[20px]">
+      <div className="w-full flex flex-col lg:flex-row items-center gap-[20px] mt-[20px]">
         <form className="w-full lg:w-[500px] mt-[30px] flex flex-col gap-[20px] text-white ">
           <div className="flex flex-col gap-[5px] ">
             <label>Fullname</label>
@@ -54,9 +54,9 @@ const ContactUs = () => {
           </button>
         </form>
 
-        <div className="w-[2px] h-[400px] bg-primaryYellow " />
+        <div className="hidden lg:block w-[2px] h-[400px] bg-primaryYellow " />
 
-        <div className="relative w-[500px] h-[400px] ">
+        <div className="relative w-full lg:w-[500px] h-[400px] ">
           <Image
             src="/photography2.jpg"
             alt="photographyImage"
@@ -64,7 +64,7 @@ const ContactUs = () => {
             className="absolute top-0 right-0 object-cover"
           />
           <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-r from-darkGray to-transparent" />
-          <div className="z-10 absolute top-[50%] transform -translate-y-[50%] text-white flex flex-col justify-start gap-[20px] ">
+          <div className="px-[10px] lg:px-0 z-10 absolute top-[50%] transform -translate-y-[50%] text-white flex flex-col justify-start gap-[20px] ">
             <div className="flex items-center gap-[5px]">
               <MdLocationOn className="text-primaryBlue text-[19px] " />
               <span>Kathmandu, Nepal</span>

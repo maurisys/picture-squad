@@ -5,22 +5,26 @@ export const navLinks = [
     },
     {
         name: "Session",
-        link: "/"
+        link: "/session"
     },
     {
         name: "Portfolio",
-        link: "/"
+        link: "/portfolio"
+    },
+    {
+        name: "Packages",
+        link: "/packages"
     },
     {
         name: "Gallery",
-        link: "/"
+        link: "/gallery"
     },
     {
-        name: "Blog",
-        link: "/"
+        name: "Blogs",
+        link: "/blogs"
     },
     {
         name: "Contact",
-        link: "/"
+        link: "/contact-us"
     },
 ]

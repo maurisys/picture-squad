@@ -3,7 +3,7 @@ import React from "react";
 
 const GalleryCard = ({ image }: { image: string }) => {
   return (
-    <div className="relative w-[290px] h-[200px] rounded-lg overflow-hidden cursor-pointer ">
+    <div className="relative w-full md:w-[290px] h-[200px] rounded-lg overflow-hidden cursor-pointer ">
       <div className="relative w-full h-full">
         <Image
           src={image}

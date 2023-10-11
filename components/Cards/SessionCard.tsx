@@ -11,7 +11,7 @@ const SessionCard = ({ title, image, slug }: Props) => {
   return (
     <Link
       href={`/book-package/${slug}`}
-      className="group relative w-[250px] h-[250px] rounded-xl overflow-hidden shadow-md shadow-primaryBlue "
+      className="group relative w-full md:w-[250px] h-[250px] rounded-xl overflow-hidden shadow-md shadow-primaryBlue "
     >
       <div className="relative w-full h-full "></div>
       <Image
