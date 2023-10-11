@@ -3,9 +3,9 @@ import Slider from "../Slider";
 
 const HeroSection = () => {
   return (
-    <div className="w-full bg-darkGray h-[90vh] flex items-center">
+    <div className="relative w-full bg-darkGray h-[90vh] flex items-center">
       {/* left section */}
-      <div className="min-w-[52%] flex flex-col text-white px-[50px]">
+      <div className="z-10 min-w-[52%] flex flex-col text-white px-[50px]">
         <h1 className="text-6xl font-bold">
           <span className="text-primaryBlue">Capture</span>{" "}
           <span className="text-primaryBlue">Moments</span>, Create Memories
@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* right section */}
-      <div className="relative grow h-full">
+      <div className="absolute top-0 left-0 lg:relative lg:grow h-full">
         <Slider />
         {/* overlay */}
         <div className="radientOverlay" />

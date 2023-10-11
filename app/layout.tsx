@@ -2,6 +2,7 @@ import Navbar from '@/components/Header/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import MobileNav from '@/components/Header/MobileNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <MobileNav />
         {children}
         </body>
     </html>
