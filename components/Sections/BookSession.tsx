@@ -4,7 +4,7 @@ import SessionCard from '../Cards/SessionCard'
 
 const BookTheSession = () => {
   return (
-    <div className='bookSession w-[80%] py-[70px] mt-[30px]'>
+    <div className='bookSession w-[90%] py-[70px] mt-[30px]'>
         <div className='w-full flex items-center justify-center gap-[50px]'>
             <h1 className='whitespace-nowrap font-poppins text-lg md:text-xl font-bold tracking-[2px] underline underline-offset-8 decoration-primaryBlue'>
                 Book The Session

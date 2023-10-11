@@ -10,7 +10,7 @@ interface Props {
 const SessionCard = ({ title, image, slug }: Props) => {
   return (
     <Link
-      href={`/packages/${slug}`}
+      href={`/book-package/${slug}`}
       className="group relative w-[250px] h-[250px] rounded-xl overflow-hidden shadow-md shadow-primaryBlue "
     >
       <div className="relative w-full h-full "></div>

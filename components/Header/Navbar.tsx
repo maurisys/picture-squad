@@ -5,9 +5,33 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className={`bg-darkGray text-white z-10 w-full hidden md:flex flex-col items-center`}>
-      <div className="navContainer relative w-[80%] flex items-center gap-[30px] justify-end py-[20px] px-[20px] font-montserrat tracking-[2px]">
-        <div className="absolute top-[20px] left-[20px] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white ">
+    <div className={`bg-darkGray text-white z-40 w-full hidden md:flex flex-col items-center`}>
+      <div className="navContainer relative w-[80%] flex items-center gap-[30px] justify-evenly py-[20px] px-[20px] font-montserrat tracking-[2px]">
+
+        <ul className="flex items-center gap-[30px] font-bold tracking-[1.2px]">
+          <li>
+            <Link href="/">
+              Home
+            </Link>
+
+          </li>
+          <li>
+            <Link href="/session">
+              Session
+            </Link>
+
+          </li>
+          <li>
+            <Link href="/package">
+              Package
+            </Link>
+
+          </li>
+        </ul>
+
+        <div style={{
+          zIndex: 100
+        }} className="absolute top-[95%] transform -translate-x-[50%] left-[50%] -translate-y-[50%] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white ">
           <Image
             src="/logo-noBg.png"
             alt="logo"
@@ -17,21 +41,26 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="w-max flex flex-col gap-[12px]">
-          <ul className="flex items-center justify-end gap-[20px] font-poppins">
-            {navLinks.map((item, index) => (
-              <li
-                key={index}
-                className={`${
-                  index === navLinks.length - 1 &&
-                  "bg-primaryBlue rounded-[4px]"
-                } p-[10px] hover:bg-primaryYellow hover:text-black transition duration-120 ease-out rounded-[4px] cursor-pointer`}
-              >
-                <Link href={item.link}>{item.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="flex items-center gap-[30px] font-bold tracking-[1.2px]">
+          <li>
+            <Link href="/blogs">
+              Blogs
+            </Link>
+
+          </li>
+          <li>
+            <Link href="/gallery">
+              Gallery
+            </Link>
+
+          </li>
+
+          <li className="bg-primaryBlue p-[10px] rounded-[4px]">
+            <Link href="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
