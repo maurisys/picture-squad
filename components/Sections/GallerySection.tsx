@@ -10,9 +10,6 @@ const GallerySection = () => {
             <h1 className='font-poppins text-xl font-bold tracking-[2px] underline underline-offset-8 decoration-primaryBlue'>
                 Our Gallery
             </h1>
-            <button className='hidden lg:block bg-primaryBlue px-[30px] py-[10px] rounded-[4px] font-montserrat text-lg font-bold tracking-[2px]'>
-                View All
-            </button>
         </div>
 
         <div className='w-full flex items-center justify-center gap-[20px] flex-wrap mt-[70px] '>

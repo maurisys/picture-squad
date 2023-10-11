@@ -3,15 +3,15 @@ import React from "react";
 
 const BookPackage = () => {
   return (
-    <div className="bg-darkGray min-h-[100vh] w-full flex flex-col items-center py-[50px]">
+    <div className="bg-darkGray min-h-[100vh] w-full flex flex-col items-center px-[20px] py-[50px]">
       <div className="mt-[50px]">
         <h1 className="bg-primaryYellow w-max font-montserrat font-bold text-xl p-[10px] rounded-[4px]">
           Book Package
         </h1>
       </div>
-      <div className="p-[20px] bg-white w-[80%] flex items-center gap-[20px] mt-[50px] shadow-lg rounded-[4px]">
-        <div className="w-[40%] h-full flex flex-col items-center justify-center">
-          <h1 className="font-satisfy text-primaryBlue font-bold text-[29px] text-center underline underline-offset-8 decoration-primaryYellow">
+      <div className="px-[5px] bg-white w-full lg:w-[90%] flex flex-col lg:flex-row items-center gap-[20px] mt-[20px] lg:mt-[50px] shadow-lg rounded-[4px]">
+        <div className="w-full lg:w-[40%] h-full flex flex-col items-center justify-center">
+          <h1 className="mt-[10px] font-satisfy text-primaryBlue font-bold text-[29px] text-center underline underline-offset-8 decoration-primaryYellow">
             Maternity package
           </h1>
           <p className="mt-[20px]">

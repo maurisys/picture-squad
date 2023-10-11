@@ -9,9 +9,6 @@ const BookTheSession = () => {
             <h1 className='whitespace-nowrap font-poppins text-lg md:text-xl font-bold tracking-[2px] underline underline-offset-8 decoration-primaryBlue'>
                 Book The Session
             </h1>
-            <button className='hidden md:block bg-primaryBlue px-[30px] py-[10px] rounded-[4px] font-montserrat text-[14px] md:text-lg font-bold tracking-[2px]'>
-                View All
-            </button>
         </div>
 
         <div className='w-full flex items-center justify-center gap-[50px] flex-wrap mt-[40px] '>

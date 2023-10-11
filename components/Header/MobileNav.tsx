@@ -13,13 +13,15 @@ const MobileNav = () => {
   return (
     <div className="mt-[-30px] z-40 fixed top-0 left-0 lg:hidden w-full flex items-center justify-between p-[10px]">
       <div>
-        <Image
-          src="/logo-noBg.png"
-          alt="logo"
-          width={120}
-          height={120}
-          className="object-contain rounded-full mt-[10px] "
-        />
+        <Link href="/">
+          <Image
+            src="/logo-noBg.png"
+            alt="logo"
+            width={120}
+            height={120}
+            className="object-contain rounded-full mt-[10px] "
+          />
+        </Link>
       </div>
 
       <div
@@ -55,7 +57,7 @@ const MobileNav = () => {
                   key={index}
                   href={item.link}
                   className="font-bold text-primaryBlue"
-                  onClick={()=> setIsMobileMenuActive(false)}
+                  onClick={() => setIsMobileMenuActive(false)}
                 >
                   {item.name}
                 </Link>
@@ -65,9 +67,7 @@ const MobileNav = () => {
         </div>
       )}
 
-      {
-        isMobileMenuActive && <Overlay />
-      }
+      {isMobileMenuActive && <Overlay />}
     </div>
   );
 };

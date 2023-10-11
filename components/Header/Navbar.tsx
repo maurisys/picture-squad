@@ -27,13 +27,15 @@ const Navbar = () => {
           }}
           className="absolute top-[95%] transform -translate-x-[50%] left-[50%] -translate-y-[50%] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white "
         >
-          <Image
-            src="/logo-noBg.png"
-            alt="logo"
-            width={120}
-            height={120}
-            className="object-contain rounded-full "
-          />
+          <Link href="/">
+            <Image
+              src="/logo-noBg.png"
+              alt="logo"
+              width={120}
+              height={120}
+              className="object-contain rounded-full "
+            />
+          </Link>
         </div>
 
         <ul className="flex items-center gap-[30px] font-bold tracking-[1.2px]">

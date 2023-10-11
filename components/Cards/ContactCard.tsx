@@ -5,7 +5,7 @@ import { MdLocationOn } from "react-icons/md";
 
 const ContactCard = () => {
   return (
-    <div className="flex items-center gap-[30px]">
+    <div className="flex items-center flex-wrap gap-[30px]">
       <div className="flex items-center gap-[5px]">
         <MdLocationOn className="text-primaryBlue text-[19px] " />
         <span>Kathmandu, Nepal</span>
