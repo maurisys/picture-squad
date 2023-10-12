@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div className='w-full min-h-[100vh]'>Portfolio</div>
   )
 }
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const TrendingSession = () => {
@@ -8,23 +9,40 @@ const TrendingSession = () => {
         <h1 className="underline underline-offset-8 decoration-primaryBlue text-xl font-bold tracking-[2px]">
           Trending Session
         </h1>
-        <div className="w-full flex items-center justify-center gap-[10px] lg:gap-[30px]">
-          <div className="relative w-1/2 h-[350px] ">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-[20px] lg:gap-[30px]">
+          <div className="relative w-full md:w-1/2 h-[350px] ">
             <Image
               src="/image1.jpg"
               alt="image1"
               fill
               className="rounded-xl object-cover "
             />
+            <div className="bg-gradient-to-r from-transparent to-white absolute bottom-[0px] p-[10px] w-full flex flex-col items-center gap-[10px] ">
+              <p className="bg-gradient-to-r from-primaryYellow to-primarYellow/75 p-[10px] text-lg font-bold">
+                Maternity Package
+              </p>
+              <button className="bg-primaryBlue text-lg px-[20px] py-[10px] rounded-[4px]">
+                <Link href="">Book Now</Link>
+              </button>
+            </div>
           </div>
 
-          <div className="relative w-1/2 h-[350px] ">
+          <div className="relative w-full md:w-1/2 h-[350px] ">
             <Image
               src="/image2.jpg"
               alt="image1"
               fill
               className="rounded-xl object-cover "
             />
+
+            <div className="bg-gradient-to-r from-transparent to-white absolute bottom-[0px] p-[10px] w-full flex flex-col items-center gap-[10px] ">
+              <p className="bg-gradient-to-r from-primaryYellow to-primarYellow/75 p-[10px] text-lg font-bold">
+                Newborn Package
+              </p>
+              <button className="bg-primaryBlue text-lg px-[20px] py-[10px] rounded-[4px]">
+                <Link href="">Book Now</Link>
+              </button>
+            </div>
           </div>
         </div>
       </div>

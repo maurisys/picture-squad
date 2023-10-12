@@ -12,7 +12,7 @@ const ContactUs = () => {
         Get in touch with us
       </h1>
 
-      <div className="w-full flex flex-col lg:flex-row items-center gap-[20px] mt-[20px]">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-[20px] mt-[20px]">
         <form className="w-full lg:w-[500px] mt-[30px] flex flex-col gap-[20px] text-white ">
           <div className="flex flex-col gap-[5px] ">
             <label>Fullname</label>
