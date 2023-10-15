@@ -5,7 +5,7 @@ import GalleryCard from "../Cards/GalleryCard";
 import ImagePopup from "../ImagePopup";
 import Overlay from "../Overlay";
 
-const GallerySection = () => {
+const GallerySection = ({ galleryData }: any) => {
   const [clickedImageUrl, setClickedImageUrl] = useState<string>("");
   return (
     <div className="gallerySection w-full md:w-[90%] px-[20px] py-[50px] flex flex-col items-center ">
@@ -16,8 +16,8 @@ const GallerySection = () => {
       </div>
 
       <div className="w-full flex items-center justify-center gap-[20px] flex-wrap mt-[70px] ">
-        {gallleryData?.length > 0 &&
-          gallleryData.map((item, index) => (
+        {galleryData?.length > 0 &&
+          galleryData.map((item: any, index: number) => (
             <GalleryCard
               key={index}
               image={item.image}
@@ -26,7 +26,12 @@ const GallerySection = () => {
           ))}
       </div>
 
-      {clickedImageUrl && <ImagePopup image={clickedImageUrl} handleCross={()=> setClickedImageUrl("")} />}
+      {clickedImageUrl && (
+        <ImagePopup
+          image={clickedImageUrl}
+          handleCross={() => setClickedImageUrl("")}
+        />
+      )}
 
       {clickedImageUrl && <Overlay />}
     </div>

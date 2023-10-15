@@ -1,8 +1,7 @@
 import React from 'react'
-import { sessionCardData } from '../../data/sessionCardData'
 import SessionCard from '../Cards/SessionCard'
 
-const BookTheSession = () => {
+const BookTheSession = ({sessionData}: any) => {
   return (
     <div className='bookSession w-full lg:w-[90%] px-[20px] py-[30px] lg:py-[70px] mt-[30px]'>
         <div className='w-full flex items-center justify-center gap-[50px]'>
@@ -12,7 +11,7 @@ const BookTheSession = () => {
         </div>
 
         <div className='w-full flex items-center justify-center gap-[50px] flex-wrap mt-[40px] '>
-            {sessionCardData?.length > 0 && sessionCardData.map((item,index)=>(
+            {sessionData?.length > 0 && sessionData.map((item: any,index: number)=>(
                 <SessionCard key={index} title={item.title} image={item.image} slug={item.slug} />
             ))}
         </div>

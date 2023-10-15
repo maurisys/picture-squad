@@ -2,23 +2,28 @@ import React from "react";
 import { TbPhoneCall } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
+import { getSiteInfo } from "@/ApiQuery";
 
-const ContactCard = () => {
+const ContactCard = async() => {
+
+  const {data} = await getSiteInfo();
+
+  const {email,contact_no,address} = data;
   return (
     <div className="flex items-center flex-wrap gap-[30px]">
       <div className="flex items-center gap-[5px]">
         <MdLocationOn className="text-primaryBlue text-[19px] " />
-        <span>Kathmandu, Nepal</span>
+        <span>{address || "...."}</span>
       </div>
 
       <div className="flex items-center gap-[5px]">
         <TbPhoneCall className="text-primaryBlue text-[19px] " />
-        <span>9807717694</span>
+        <span>{contact_no || "...."}</span>
       </div>
 
       <div className="flex items-center gap-[5px]">
         <HiOutlineMail className="text-primaryBlue text-[19px] " />
-        <span>abcd@gmail.com</span>
+        <span>{email || "...."}</span>
       </div>
     </div>
   );
