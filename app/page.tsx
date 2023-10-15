@@ -7,7 +7,7 @@ import TrendingSession from "@/components/Sections/TrendingSession";
 
 export default async function Home() {
   const data = await getHomePageData();
-  const {session, trendingSession,banner1,banner2,gallery, testimonial} = data
+  const {session, trendingSession,banner1,banner2,gallery, testmonial} = data
 console.log(data)
   return (
     <main className="w-full overflow-x-hidden flex flex-col items-center">
@@ -15,7 +15,7 @@ console.log(data)
       <BookTheSession sessionData={session} />
       <TrendingSession trendingSessionData={trendingSession} banner1={banner1} banner2={banner2} />
       <GallerySection galleryData={gallery} />
-      <Testimonials />
+      <Testimonials testimonialData={testmonial} />
     </main>
   );
 }

@@ -56,34 +56,43 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
 
       <div className="w-full h-full rounded-xl flex flex-col gap-[30px] mt-[30px] ">
         {/* special offer bannner */}
-        <div className="relative w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl">
-          <div className="relative w-full h-[250px] ">
-            <Image
-              src={banner1[0].image}
-              alt="banner"
-              fill
-              className="object-cover"
-            />
-          </div>
+        {banner1[0] && (
+          <div className="relative w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl">
+            {banner1[0]?.image && (
+              <div className="relative w-full h-[250px] ">
+                <Image
+                  src={banner1[0]?.image}
+                  alt="banner"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
 
-          <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-primaryBlue/75 to-primaryRed/75 p-[20px] font-satisfy text-center font-bold text-lg">
-            {banner1[0].title}
-          </p>
-        </div>
-        {/* upcoming session bannner */}
-        <div className="relative w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl ">
-          <div className="relative w-full h-[250px] ">
-            <Image
-              src={banner2[0].image}
-              alt="banner"
-              fill
-              className="object-cover"
-            />
+            <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-primaryBlue/75 to-primaryRed/75 p-[20px] font-satisfy text-center font-bold text-lg">
+              {banner1[0]?.title}
+            </p>
           </div>
-          <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-primaryBlue/75 to-primaryRed/75 p-[20px] font-satisfy text-center font-bold text-lg">
-            {banner2[0].title}
-          </p>
-        </div>
+        )}
+
+        {/* upcoming session bannner */}
+        {banner2[0] && (
+          <div className="relative w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl ">
+            {banner2[0]?.image && (
+              <div className="relative w-full h-[250px] ">
+                <Image
+                  src={banner2[0]?.image}
+                  alt="banner"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-primaryBlue/75 to-primaryRed/75 p-[20px] font-satisfy text-center font-bold text-lg">
+              {banner2[0]?.title}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

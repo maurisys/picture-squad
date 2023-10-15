@@ -19,6 +19,7 @@ const Packages = async() => {
               title={item.title}
               price={item.price}
               features={item.description}
+              slug={item.slug}
             />
           ))}
         </div>

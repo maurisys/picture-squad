@@ -11,7 +11,7 @@ const Blogs = async () => {
         Blogs
       </h1>
 
-      <div className="w-full flex items-center justify-center gap-[20px] flex-wrap mt-[30px] md:mt-[70px] ">
+      <div className="w-full flex items-center justify-center gap-[30px] flex-wrap mt-[30px] md:mt-[70px] ">
         {data?.length > 0 &&
           data.map((item: any, index: number) => (
             <BlogCard key={index} data={item} />

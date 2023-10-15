@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../Slider";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -20,10 +21,10 @@ const HeroSection = () => {
 
         <div className="flex flex-col md:flex-row items-center gap-[20px] mt-[20px] md:mt-[30px]">
           <button className="bg-primaryYellow cursor-pointer hover:scale-105 hover:opacity-[85%] px-[20px] py-[8px] rounded-[25px] text-black text-lg font-bold tracking-wider transition duration-120 ease-out">
-            Book Session
+            <Link href="/session">Book Session</Link>
           </button>
           <button className="bg-white border px-[20px] py-[8px] rounded-[25px] text-black text-lg font-bold tracking-wider">
-            View Portfolio
+            <Link href="/portfolio">View Portfolio</Link>
           </button>
         </div>
       </div>
