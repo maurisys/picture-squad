@@ -15,7 +15,6 @@ const Gallery = () => {
   const fetchGalleryData = async () => {
     setLoading(true);
     const {data} = await getGalleryList();
-    console.log(data)
     setLoading(false);
     setGalleryData(data);
   };

@@ -38,6 +38,15 @@ const Footer = ({siteInfo}: any) => {
           <FaInstagram className="text-[19px] font-bold " />
         </Link>
       </div>
+
+      <div className="mt-[15px] w-full flex flex-col gap-[10px] items-center flex-wrap justify-evenly">
+        <p className="text-[14px]">
+          Designed and Developed by <Link href="https://maurisys.com/" target="_blank" className="underline underline-offset-4 font-bold">Maurisys Software Pvt. Ltd.</Link>
+        </p>
+        <p className="text-[13px] text-slate-300 ">
+          @copyright 2023
+        </p>
+      </div>
     </div>
   );
 };

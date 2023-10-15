@@ -14,7 +14,6 @@ const Portfolio = () => {
   const fetchPortfolioData = async () => {
     setLoading(true);
     const { data } = await getPrtfolioList();
-    console.log(data);
     setLoading(false);
     setPortfolioData(data);
   };
@@ -30,14 +29,18 @@ const Portfolio = () => {
       </h1>
 
       {loading && <Loader />}
-      <div className="w-full flex items-center justify-center gap-[20px] flex-wrap mt-[30px] md:mt-[70px] ">
+      <div className="w-full flex items-center justify-center gap-[20px] md:gap-[30px] flex-wrap mt-[30px] md:mt-[70px] ">
         {portfolioData?.length > 0 &&
           portfolioData.map((item: any, index) => (
-            <GalleryCard
-              key={index}
-              image={item.image}
-              handleImageClick={() => setClickedImageUrl(item.image)}
-            />
+            <div key={index} className="">
+              <GalleryCard
+                image={item.image}
+                handleImageClick={() => setClickedImageUrl(item.image)}
+              />
+              <p className="p-[10px] font-medium capitalize">
+                {item.title}
+              </p>
+            </div>
           ))}
       </div>
 

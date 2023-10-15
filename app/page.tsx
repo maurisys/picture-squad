@@ -8,7 +8,7 @@ import TrendingSession from "@/components/Sections/TrendingSession";
 export default async function Home() {
   const data = await getHomePageData();
   const {session, trendingSession,banner1,banner2,gallery, testmonial} = data
-console.log(data)
+
   return (
     <main className="w-full overflow-x-hidden flex flex-col items-center">
       <HeroSection />

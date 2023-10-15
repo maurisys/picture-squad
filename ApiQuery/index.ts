@@ -53,7 +53,6 @@ export const getPackageList = async () => {
 
 // Get package Details
 export const getPackageDetails = async (slug: string) => {
-  console.log(slug);
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/package/details/${slug}`,
     { next: { revalidate: 60 } }
@@ -92,6 +91,15 @@ export const getGalleryList = async () => {
 export const getPrtfolioList = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/portfolio/list`,
+    { next: { revalidate: 60 } }
+  );
+  return res.json();
+};
+
+// Get Gallery List
+export const getAboutPageData = async () => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/v1/about`,
     { next: { revalidate: 60 } }
   );
   return res.json();

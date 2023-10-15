@@ -11,7 +11,7 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
         </h1>
         <div className="w-full flex flex-col md:flex-row items-center justify-center gap-[20px] lg:gap-[30px]">
           {trendingSessionData[0] && (
-            <div className="relative w-full md:w-1/2 h-[350px] ">
+            <div className="relative w-full md:w-1/2 h-[350px] border border-slate-500 rounded-xl overflow-hidden shadow-xl">
               <Image
                 src={trendingSessionData[0].image}
                 alt="image1"
@@ -32,7 +32,7 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
           )}
 
           {trendingSessionData[1] && (
-            <div className="relative w-full md:w-1/2 h-[350px] ">
+            <div className="relative w-full md:w-1/2 h-[350px] border border-slate-500 rounded-xl overflow-hidden shadow-xl">
               <Image
                 src={trendingSessionData[1].image}
                 alt="image1"
@@ -54,12 +54,12 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
         </div>
       </div>
 
-      <div className="w-full h-full rounded-xl flex flex-col gap-[30px] mt-[30px] ">
+      <div className="w-full h-full rounded-xl flex flex-col gap-[30px] lg:gap-[50px] mt-[50px] ">
         {/* special offer bannner */}
         {banner1[0] && (
-          <div className="relative w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl">
+          <div className="relative w-full h-[350px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl border border-slate-400">
             {banner1[0]?.image && (
-              <div className="relative w-full h-[250px] ">
+              <div className="relative w-full h-[350px] ">
                 <Image
                   src={banner1[0]?.image}
                   alt="banner"
@@ -69,7 +69,7 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
               </div>
             )}
 
-            <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-primaryBlue/75 to-primaryRed/75 p-[20px] font-satisfy text-center font-bold text-lg">
+            <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-black to-primaryRed/75 text-white p-[20px] font-satisfy text-center font-bold text-lg">
               {banner1[0]?.title}
             </p>
           </div>
@@ -77,9 +77,9 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
 
         {/* upcoming session bannner */}
         {banner2[0] && (
-          <div className="relative w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl ">
+          <div className="relative w-full h-[350px] flex items-center justify-center rounded-lg overflow-hidden shadow-xl border border-slate-400">
             {banner2[0]?.image && (
-              <div className="relative w-full h-[250px] ">
+              <div className="relative w-full h-[350px] ">
                 <Image
                   src={banner2[0]?.image}
                   alt="banner"
@@ -88,7 +88,7 @@ const TrendingSession = ({ trendingSessionData, banner1, banner2 }: any) => {
                 />
               </div>
             )}
-            <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-primaryBlue/75 to-primaryRed/75 p-[20px] font-satisfy text-center font-bold text-lg">
+            <p className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-gradient-to-r from-black to-primaryRed/75 p-[20px] text-white font-satisfy text-center font-bold text-lg">
               {banner2[0]?.title}
             </p>
           </div>
