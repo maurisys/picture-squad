@@ -10,7 +10,7 @@ const ContactCard = async() => {
 
   const {email,contact_no,address} = data;
   return (
-    <div className="flex items-center flex-wrap gap-[30px]">
+    <div className="bg-slate-300 p-[20px] flex items-center justify-center flex-wrap gap-[30px]">
       <div className="flex items-center gap-[5px]">
         <MdLocationOn className="text-primaryBlue text-[19px] " />
         <span>{address || "...."}</span>
