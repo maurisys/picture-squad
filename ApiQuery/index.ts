@@ -104,3 +104,12 @@ export const getAboutPageData = async () => {
   );
   return res.json();
 };
+
+// Get Video List
+export const getVideosData = async () => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/v1/video-gallery/list`,
+    { next: { revalidate: 60 } }
+  );
+  return res.json();
+};
