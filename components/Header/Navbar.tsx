@@ -6,7 +6,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div
-      className={`bg-darkGray text-white z-40 w-full hidden md:flex flex-col items-center`}
+      className={`sticky top-0 bg-darkGray text-white z-40 w-full hidden md:flex flex-col items-center`}
     >
       <div className="navContainer relative w-[80%] flex items-center gap-[30px] justify-evenly py-[20px] px-[20px] font-montserrat tracking-[2px]">
         <ul className="flex items-center gap-[30px] font-bold tracking-[1.2px]">
@@ -25,7 +25,7 @@ const Navbar = () => {
           style={{
             zIndex: 100,
           }}
-          className="absolute top-[95%] transform -translate-x-[50%] left-[50%] -translate-y-[50%] w-[100px] h-[100px] rounded-full flex items-center justify-center bg-white "
+          className="w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white "
         >
           <Link href="/">
             <Image
@@ -47,7 +47,7 @@ const Navbar = () => {
           </li>
 
           <li className="bg-primaryBlue p-[10px] rounded-[4px]">
-            <Link href="/contact-us">Contact</Link>
+            <Link href="/contact-us">Enquiry Now</Link>
           </li>
         </ul>
       </div>

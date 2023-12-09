@@ -8,10 +8,10 @@ const VideoSection = ({ data }: any) => {
         Captured Videos
       </p>
 
-      <div className="w-full mt-[50px] font-montserrat">
+      <div className="w-full mt-[50px] font-montserrat flex items-center justify-center flex-wrap">
         {data?.length > 0 &&
           data.map((item: any, index: number) => (
-            <div key={index} className="w-full lg:w-[30%] p-[15px]">
+            <div key={index} className="w-full lg:w-[70%] p-[15px]">
               <iframe
                 width="100%"
                 height="275"

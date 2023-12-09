@@ -2,11 +2,11 @@ import { navLinks } from "@/data/navLinks";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
-const Footer = ({siteInfo}: any) => {
+const Footer = ({ siteInfo }: any) => {
 
-  const {facebook_link,instagram_link} = siteInfo
+  const { facebook_link, instagram_link } = siteInfo
   return (
     <div className="w-full bg-black text-white flex flex-col items-center gap-[20px] px-[20px] py-[30px]">
       <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-[30px]">
@@ -37,6 +37,10 @@ const Footer = ({siteInfo}: any) => {
         <Link href={instagram_link} target="_blank" className="w-[40px] h-[40px] rounded-full flex items-center justify-center border border-slate-300 ">
           <FaInstagram className="text-[19px] font-bold " />
         </Link>
+
+        <Link href={''} target="_blank" className="w-[40px] h-[40px] rounded-full flex items-center justify-center border border-slate-300 ">
+          <FaYoutube className="text-[19px] font-bold " />
+        </Link>
       </div>
 
       <div className="mt-[15px] w-full flex flex-col gap-[10px] items-center flex-wrap justify-evenly">
@@ -44,7 +48,7 @@ const Footer = ({siteInfo}: any) => {
           Designed and Developed by <Link href="https://maurisys.com/" target="_blank" className="underline underline-offset-4 font-bold">Maurisys Software Pvt. Ltd.</Link>
         </p>
         <p className="text-[13px] text-slate-300 ">
-          @copyright 2023
+          copyright 2023 @ All Rights Reserved by Picture Squad Studio Nepal
         </p>
       </div>
     </div>
