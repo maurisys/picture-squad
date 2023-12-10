@@ -8,7 +8,7 @@ const Navbar = () => {
     <div
       className={`sticky top-0 bg-darkGray text-white z-40 w-full hidden md:flex flex-col items-center`}
     >
-      <div className="navContainer relative w-[80%] flex items-center gap-[30px] justify-evenly py-[20px] px-[20px] font-montserrat tracking-[2px]">
+      <div className="navContainer relative w-[80%] flex items-center gap-[30px] justify-center py-[20px] px-[20px] font-montserrat tracking-[2px]">
         <ul className="flex items-center gap-[30px] font-bold tracking-[1.2px]">
           <li>
             <Link href="/">Home</Link>

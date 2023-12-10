@@ -24,7 +24,7 @@ const HeroSection = () => {
             <Link href="/session">Book Session</Link>
           </button>
           <button className="bg-white border px-[20px] py-[8px] rounded-[25px] text-black text-lg font-bold tracking-wider">
-            <Link href="/session">View More</Link>
+            <Link href="/portfolio">View Portfolio</Link>
           </button>
         </div>
       </div>

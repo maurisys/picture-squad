@@ -11,15 +11,15 @@ const MobileNav = () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
 
   return (
-    <div className="mt-[-30px] z-40 fixed top-0 left-0 lg:hidden w-full flex items-center justify-between p-[10px]">
+    <div className=" z-40 h-max fixed top-0 left-0 bg-black/75 backdrop-blur-sm lg:hidden w-full flex items-center justify-between p-[10px]">
       <div>
         <Link href="/">
           <Image
             src="/logo-noBg.png"
             alt="logo"
-            width={120}
-            height={120}
-            className="object-contain rounded-full mt-[10px] "
+            width={100}
+            height={100}
+            className="object-contain rounded-full"
           />
         </Link>
       </div>
@@ -39,7 +39,7 @@ const MobileNav = () => {
             zIndex: 100,
             animation: "navbarAnimate ease 0.2s",
           }}
-          className="px-[20px] w-[80%] h-[100%] md:hidden fixed top-[0px] right-0 flex flex-col gap-[30px] overflow-y-scroll scrollbar-hide bg-white transition ease-out delay-1000"
+          className="px-[20px] w-[80%] h-[100vh] md:hidden fixed top-[0px] right-0 flex flex-col gap-[30px] overflow-y-scroll scrollbar-hide bg-white transition ease-out delay-1000"
         >
           {/*....Cross...*/}
           <div

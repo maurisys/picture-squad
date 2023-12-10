@@ -1,7 +1,6 @@
 "use client"
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { testimonials } from "../../data/testimonialsData";
 import TestimonialCard from "../Cards/TestimonialCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
