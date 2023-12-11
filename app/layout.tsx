@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import MobileNav from "@/components/Header/MobileNav";
 import Footer from "@/components/Footer";
 import { getSiteInfo } from "@/ApiQuery";
+import FacebookChatBot from "@/components/Chatbot/FacebookChatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default async function RootLayout({
         <MobileNav />
         {children}
         <Footer siteInfo={data} />
+        <FacebookChatBot />
       </body>
     </html>
   );
