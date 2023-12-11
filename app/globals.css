@@ -44,3 +44,48 @@ body {
   background: radial-gradient(circle at 100%, transparent, transparent,#353535 90%, #353535 95%);
 }
 
+/* Session card */
+.sessionCard::before{
+  box-sizing: border-box;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  bottom: 20px;
+  right: 10px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-top: 2px solid #f1db0f;
+   border-bottom: 2px solid #f1db0f;
+  transform: scale(0, 1);
+  transition: transform 0.4s ease-out;
+  opacity: 0;
+}
+.sessionCard::after{
+  box-sizing: border-box;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  bottom: 20px;
+  right: 10px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-left: 2px solid #f1db0f;
+  border-right: 2px solid #f1db0f;
+  transform: scale(1, 0);
+  transition: transform 0.4s ease-out;
+  opacity: 0;
+}
+.sessionCard:hover::before{
+  opacity: 1;
+  transform: scale(1.05, 1);
+}
+.sessionCard:hover::after{
+  opacity: 1;
+  transform: scale(1, 1.05);
+}

@@ -11,8 +11,8 @@ const MobileNav = () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
 
   return (
-    <div className=" z-40 h-max fixed top-0 left-0 bg-black/75 backdrop-blur-sm lg:hidden w-full flex items-center justify-between p-[10px]">
-      <div>
+    <div className=" z-40 h-max fixed top-0 left-0 lg:hidden w-full flex items-center justify-between p-[10px]">
+      <div className="bg-black/50 backdrop-blur-sm w-[110px] h-[110px] rounded-full flex items-center justify-center ">
         <Link href="/">
           <Image
             src="/logo-noBg.png"

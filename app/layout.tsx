@@ -6,6 +6,7 @@ import MobileNav from "@/components/Header/MobileNav";
 import Footer from "@/components/Footer";
 import { getSiteInfo } from "@/ApiQuery";
 import FacebookChatBot from "@/components/Chatbot/FacebookChatbot";
+import WhatsAppChatButton from "@/components/Chatbot/WhatsAppChatBtn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <FacebookChatBot />
+        <WhatsAppChatButton phoneNumber="9851325390" />
         <Navbar />
         <MobileNav />
         {children}
