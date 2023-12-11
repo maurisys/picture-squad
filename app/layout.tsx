@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import MobileNav from "@/components/Header/MobileNav";
 import Footer from "@/components/Footer";
 import { getSiteInfo } from "@/ApiQuery";
-import MessengerChatPlugin from "@/components/Chatbot/FacebookChatbot";
+import FacebookChatBot from "@/components/Chatbot/FacebookChatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,16 +21,16 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
 
-  const {data} = await getSiteInfo();
+  const { data } = await getSiteInfo();
 
   return (
     <html lang="en">
       <body className={inter.className}>
+        <FacebookChatBot />
         <Navbar />
         <MobileNav />
         {children}
         <Footer siteInfo={data} />
-        <MessengerChatPlugin />
       </body>
     </html>
   );
