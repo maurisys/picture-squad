@@ -11,8 +11,8 @@ const MobileNav = () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
 
   return (
-    <div className=" z-40 h-max fixed top-0 left-0 lg:hidden w-full flex items-center justify-between p-[10px]">
-      <div className="bg-black/50 backdrop-blur-sm w-[110px] h-[110px] rounded-full flex items-center justify-center ">
+    <div className=" z-40 h-max fixed top-0 left-0 lg:hidden w-full flex items-center justify-between">
+      <div className="m-[10px] bg-black/50 backdrop-blur-sm w-[110px] h-[110px] rounded-full flex items-center justify-center ">
         <Link href="/">
           <Image
             src="/logo-noBg.png"
@@ -24,13 +24,18 @@ const MobileNav = () => {
         </Link>
       </div>
 
-      <div
-        onClick={() => {
-          setIsMobileMenuActive(true);
-        }}
-        className="bg-primaryYellow w-[40px] h-[40px] rounded-full flex items-center justify-center "
-      >
-        <CgMenuLeft className="text-[21px] font-bold " />
+      <div className="flex items-center gap-[20px] bg-black/50 backdrop-blur-sm py-[6px] px-[20px] rounded-l-[25px] ">
+        <div className="bg-primaryBlue px-[14px] py-[7px] rounded-[25px]">
+          <Link href="/contact-us">Enquiry Now</Link>
+        </div>
+        <div
+          onClick={() => {
+            setIsMobileMenuActive(true);
+          }}
+          className="bg-primaryYellow w-[40px] h-[40px] rounded-full flex items-center justify-center "
+        >
+          <CgMenuLeft className="text-[21px] font-bold " />
+        </div>
       </div>
 
       {isMobileMenuActive && (
