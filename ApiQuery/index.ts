@@ -1,8 +1,6 @@
 // Get home page data
 export async function getHomePageData() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/home`, {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/home`, { cache: 'no-store' });
   return res.json();
 }
 
@@ -10,7 +8,7 @@ export async function getHomePageData() {
 export async function getSiteInfo() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/site_info`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 }
@@ -19,7 +17,7 @@ export async function getSiteInfo() {
 export async function getFirstBanner() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/first/banner`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 }
@@ -28,7 +26,7 @@ export async function getFirstBanner() {
 export async function getSessionList() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/session/list`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 }
@@ -37,7 +35,7 @@ export async function getSessionList() {
 export const getSessionDetails = async (slug: string) => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/session/details/${slug}`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -46,7 +44,7 @@ export const getSessionDetails = async (slug: string) => {
 export const getPackageList = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/package/list`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -55,7 +53,7 @@ export const getPackageList = async () => {
 export const getPackageDetails = async (slug: string) => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/package/details/${slug}`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -64,7 +62,7 @@ export const getPackageDetails = async (slug: string) => {
 export const getBlogList = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/blog/list`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -73,7 +71,7 @@ export const getBlogList = async () => {
 export const getBlogDetails = async (slug: string) => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/blog/details/${slug}`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -82,7 +80,7 @@ export const getBlogDetails = async (slug: string) => {
 export const getGalleryList = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/gallery/list`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -91,7 +89,7 @@ export const getGalleryList = async () => {
 export const getPrtfolioList = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/portfolio/list`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -100,7 +98,7 @@ export const getPrtfolioList = async () => {
 export const getAboutPageData = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/about`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
@@ -109,7 +107,7 @@ export const getAboutPageData = async () => {
 export const getVideosData = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/v1/video-gallery/list`,
-    { next: { revalidate: 60 } }
+    { cache: 'no-store' }
   );
   return res.json();
 };
