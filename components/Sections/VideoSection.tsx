@@ -9,7 +9,7 @@ const VideoSection = ({ data }: any) => {
         Captured Videos
       </p>
 
-      <div className="w-full mt-[50px] font-montserrat grid grid-cols-1 md:grid-cols-2 gap-[40px]">
+      <div className="w-full mt-[50px] font-montserrat grid grid-cols-1 md:grid-cols-3 gap-[40px]">
         {data?.length > 0 &&
           data.map((item: any, index: number) => (
             <div key={index} className="">

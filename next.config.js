@@ -4,8 +4,15 @@ const nextConfig = {
         serverActions: true,
     },
     images: {
-        domains: ["ps.maurisys.com"]
-    }
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+                port: '',
+                pathname: '**',
+            },
+        ],
+    },
 }
 
 module.exports = nextConfig

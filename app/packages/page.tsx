@@ -7,8 +7,8 @@ const Packages = async() => {
   const {data} = await getPackageList();
 
   return (
-    <div className="min-h-[100vh] w-full flex flex-col items-center mt-[100px] pb-[50px]">
-      <p className="w-max tracking-[2px] bg-primaryBlue p-[10px] text-center font-satisfy text-2xl tracking-[1.3] font-bold ">
+    <div className="min-h-[100vh] w-full flex flex-col items-center mt-[50px] pb-[50px]">
+      <p className="w-max tracking-[2px] bg-primaryYellow p-[10px] text-center font-satisfy text-2xl tracking-[1.3] font-bold ">
         Packages
       </p>
       {data?.length > 0 && (

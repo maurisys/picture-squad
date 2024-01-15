@@ -8,8 +8,8 @@ const Session = async() => {
   const {data} = await getSessionList();
 
   return (
-    <div className='w-full min-h-[100vh] flex flex-col items-center px-[20px] pb-[50px]'>
-      <h1 className='mt-[100px] font-satisfy text-2xl font-bold bg-primaryYellow p-[10px] '>
+    <div className='w-full min-h-[100vh] flex flex-col items-center mt-[50px] px-[20px] pb-[50px]'>
+      <h1 className=' font-satisfy text-2xl font-bold bg-primaryYellow p-[10px] '>
         Our Session
       </h1>
 

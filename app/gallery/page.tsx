@@ -24,7 +24,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-[100vh] flex flex-col items-center mt-[100px] px-[20px] pb-[50px]">
+    <div className="w-full min-h-[100vh] flex flex-col items-center mt-[50px] px-[20px] pb-[50px]">
       <h1 className="w-max font-bold text-xl bg-primaryYellow p-[10px] rounded-[4px] font-satisfy ">
         Gallery
       </h1>
