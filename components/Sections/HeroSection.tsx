@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "../Slider";
 import Link from "next/link";
 
-const HeroSection = () => {
+const HeroSection = async() => {
+
   return (
     <div className="relative w-full bg-darkGray h-[100vh] lg:h-[90vh] flex items-center px-[20px]">
       {/* left section */}
