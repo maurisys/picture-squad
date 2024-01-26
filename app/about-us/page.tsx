@@ -20,9 +20,7 @@ const AboutUs = async () => {
 
             <div className='relative mt-[50px] w-full lg:max-w-[85%]'>
                 <Image src={image} alt="mainImage" width={400} height={500} className='object-cover lg:float-right rounded-lg shadow-xl' />
-                <p>
-                    {description}
-                </p>
+               <div dangerouslySetInnerHTML={{ __html: description}} />
 
             </div>
         </article>
